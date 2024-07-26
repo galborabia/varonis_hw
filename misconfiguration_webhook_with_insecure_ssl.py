@@ -2,9 +2,9 @@ from github import Github, Auth
 import os
 
 
-repo_name = "galborabia/varonis_hw"
-
+repo_name = os.environ.get("REPO_NAME", "galborabia/varonis_hw")
 github_token = os.environ.get("GITHUB_TOKEN")
+
 hook_id = 492273059
 
 authentication = Auth.Token(github_token)

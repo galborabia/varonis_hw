@@ -2,8 +2,7 @@ from github import Github, Auth
 import os
 import time
 
-repo_name = "galborabia/varonis_hw"
-
+repo_name = os.environ.get("REPO_NAME", "galborabia/varonis_hw")
 github_token = os.environ.get("GITHUB_TOKEN")
 
 authentication = Auth.Token(github_token)
