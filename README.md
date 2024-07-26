@@ -13,7 +13,9 @@
     * Changing the repository from public to private, can affect all the users/projects that use the repository. After changing the repository to private users without proper permissions to the project won't be able to access the project.
     * To relevant file for this misconfiguration is - 
       * misconfiguration_public_repo.py
-      * To be able to run this script you need to create environment variable GITHUB_TOKEN with mu token.
+      * To be able to run this script you need to create twi environment variables:
+        * REPO_NAME - repository full id, example - "galborabia/varonis_hw"
+        * GITHUB_TOKEN - token with permissions to the relevant repo (including write permissions of webhooks)
 
 * screenshot
 
@@ -29,8 +31,10 @@
     
     * To relevant file for this misconfiguration is - 
         * misconfiguration_webhook_with_insecure_ssl.py
-        * To be able to run this script you need to create environment variable GITHUB_TOKEN with mu token.
-    
+     * To be able to run this script you need to create twi environment variables:
+        * REPO_NAME - repository full id, example - "galborabia/varonis_hw"
+        * GITHUB_TOKEN - token with permissions to the relevant repo (including write permissions of webhooks)
+
     * screenshot 
    
         ![img.png](img.png)
